@@ -12,7 +12,7 @@ const options = {
 const addMessages = (identifier, data) => {
   const element = document.getElementById(`messages_${identifier}`);
   const node = document.createElement("div");
-  node.className = "border-b py-2";
+  node.className = "border-b py-2 whitespace-pre-wrap";
   const textnode = document.createTextNode(`${+ new Date()} : ${JSON.stringify(data)}`);
   node.appendChild(textnode); 
   element.appendChild(node)
